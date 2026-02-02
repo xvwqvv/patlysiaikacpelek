@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffebee 0%, #fce4ec 50%, #f8bbd9 100%);
+    padding: 16px;
+}
+
+.kart {
+    text-align: center;
+    padding: 32px;
+    max-width: 420px;
+    width: 100%;
+}
+
+.obr1 img, .obr2 img {
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 24px;
+    filter: drop-shadow(0 4px 12px rgba(233, 30, 99, 0.3));
+}
+
+.obr2 img {
+    width: 160px;
+}
+
+h1 {
+    color: #880e4f;
+    font-size: 26px;
+    margin-bottom: 32px;
+    line-height: 1.3;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+    word-wrap: break-word;
+}
+
+.prtn {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.p {
+    padding: 12px 24px;
+    min-height: 44px;
+    min-width: 44px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ptt {
+    background: linear-gradient(145deg, #e91e63, #c2185b);
+    color: #fff;
+    box-shadow: 0 4px 14px rgba(233, 30, 99, 0.4);
+}
+
+.ptt:hover {
+    box-shadow: 0 6px 20px rgba(233, 30, 99, 0.5);
+}
+
+.ptn {
+    background: #fff;
+    color: #880e4f;
+    border: 2px solid #f48fb1;
+}
+
+.ptn:hover {
+    background: #fce4ec;
+}
+
+#pytn.ukryt,
+#odpw.ukryt {
+    display: none;
+}
+
+.napis {
+    color: #c2185b;
+    font-size: 29px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+    .kart {
+        padding: 20px 16px;
+    }
+    .obr1 img {
+        width: 120px;
+    }
+    .obr2 img {
+        width: 130px;
+    }
+    h1 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+    .napis {
+        font-size: 22px;
+    }
+    .prtn {
+        gap: 12px;
+    }
+    .p {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}
